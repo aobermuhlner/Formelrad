@@ -29,6 +29,7 @@ public class Calculator {
 	}
 
 	public double getStrom() {
+            strom = spannung / widerstand;
 		return strom;
 	}
 
