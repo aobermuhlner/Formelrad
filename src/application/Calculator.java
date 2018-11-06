@@ -19,7 +19,7 @@ public class Calculator {
 		this.widerstand = widerstand;
 	}
 	
-	public double getLeistung() {    
+	public double getLeistung(double spannung, double strom) {    
             leistung = spannung * strom;
 		return leistung;
 	}
