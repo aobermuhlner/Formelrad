@@ -24,8 +24,9 @@ public class Calculator {
 		return leistung;
 	}
 	
-	public double getSpannung() {
-		return spannung;
+	public double getSpannung(double widerstand, double strom) {
+            spannung = widerstand * strom;
+            return spannung;
 	}
 
 	public double getStrom() {
