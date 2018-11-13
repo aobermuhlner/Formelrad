@@ -54,5 +54,21 @@ public class Calculator {
 	
 	/* Hier die Methoden mit den Formlen hinzuf�gen
 	 */
-	
+	private double uFromRandI(double r, double i) {
+		double result = r * i;
+		System.out.println("Result of volt from ohm (" + r + ") and ampere (" + i + ") is " + result);
+		return result;
+	}
+
+	private double UFromPAndI(double p, double i) {
+		double result = p / i;
+		System.out.println("Result of volt from watt (" + p + ") and ampere (" + i + ") is " + result);
+		return result;
+	}
+
+	private double UFromPAndR(double p, double r) {
+		double result = Math.sqrt(p * r);
+		System.out.println("Result of volt from watt (" + p + ") and ohm (" + r + ") is " + result);
+		return result;
+	}
 }
