@@ -28,14 +28,13 @@ public class Calculator {
 	}
 
 	public double getStrom() {
-            strom = spannung / widerstand;
 		return strom;
 	}
 
 	public double getWiderstand() {
 		return widerstand;
 	}
-
+//
 	@Override
 	public String toString() {
 		return "Calculator [leistung=" + leistung + 
@@ -45,12 +44,14 @@ public class Calculator {
 	}
 
 	public void calculate() {
-		/* Hier auf Grund der vorhanden Werte entscheiden
-		 * welche Methode unten aufgerufen werden muss.
-		 */
+            
+		
+                
+                
 	}
 	
 	/* Hier die Methoden mit den Formlen hinzuf�gen
 	 */
+        
 	
 }
