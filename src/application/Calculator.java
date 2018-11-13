@@ -52,15 +52,6 @@ public class Calculator {
 	
 	/* Hier die Methoden mit den Formlen hinzuf�gen
 	 */
-        public double iAusPundR(double p, double r){
-            double result = java.lang.Math.sqrt((p/r));
-            System.out.println("The result of ampere from ohm (" + r + ") and watt (" + p + ") is " + result);
-             return result;
-        }
-        public double iAusRundU(double r, double u) {
-            double result = u/r;
-            System.out.println("The result of ampere from volt (" + u + ") and ohm (" + r + ") is " + result);
-            return result;
-        }
+        
 	
 }
