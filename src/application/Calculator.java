@@ -19,8 +19,7 @@ public class Calculator {
 		this.widerstand = widerstand;
 	}
 	
-	public double getLeistung(double spannung, double strom) {    
-            leistung = spannung * strom;
+	public double getLeistung() {    
 		return leistung;
 	}
 	
@@ -29,14 +28,13 @@ public class Calculator {
 	}
 
 	public double getStrom() {
-            strom = spannung / widerstand;
 		return strom;
 	}
 
 	public double getWiderstand() {
 		return widerstand;
 	}
-
+//
 	@Override
 	public String toString() {
 		return "Calculator [leistung=" + leistung + 
@@ -46,12 +44,23 @@ public class Calculator {
 	}
 
 	public void calculate() {
-		/* Hier auf Grund der vorhanden Werte entscheiden
-		 * welche Methode unten aufgerufen werden muss.
-		 */
+            
+		
+                
+                
 	}
 	
 	/* Hier die Methoden mit den Formlen hinzuf�gen
 	 */
+        public double iAusPundR(double p, double r){
+            double result = java.lang.Math.sqrt((p/r));
+            System.out.println("The result of ampere from ohm (" + r + ") and watt (" + p + ") is " + result);
+             return result;
+        }
+        public double iAusRundU(double r, double u) {
+            double result = u/r;
+            System.out.println("The result of ampere from volt (" + u + ") and ohm (" + r + ") is " + result);
+            return result;
+        }
 	
 }
