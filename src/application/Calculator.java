@@ -34,7 +34,7 @@ public class Calculator {
 	public double getWiderstand() {
 		return widerstand;
 	}
-
+//
 	@Override
 	public String toString() {
 		return "Calculator [leistung=" + leistung + 
