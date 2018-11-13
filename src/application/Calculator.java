@@ -29,7 +29,6 @@ public class Calculator {
 	}
 
 	public double getStrom() {
-            strom = spannung / widerstand;
 		return strom;
 	}
 
@@ -46,12 +45,21 @@ public class Calculator {
 	}
 
 	public void calculate() {
-		/* Hier auf Grund der vorhanden Werte entscheiden
-		 * welche Methode unten aufgerufen werden muss.
-		 */
+            
+		
+                
+                
 	}
 	
 	/* Hier die Methoden mit den Formlen hinzuf�gen
 	 */
+        public double iAusPundR(double p, double r){
+            return java.lang.Math.sqrt((p/r));
+        }
+        public double iAusRundU(double r, double u) {
+            double result = u/r;
+            System.out.println("The result of ampere from volt (" + u + ") and ohm (" + r + ") is " + result);
+            return result;
+        }
 	
 }
