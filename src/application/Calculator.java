@@ -20,7 +20,6 @@ public class Calculator {
 	}
 	
 	public double getLeistung() {    
-            leistung = spannung * strom;
 		return leistung;
 	}
 	
