@@ -74,5 +74,9 @@ public class Calculator {
             System.out.println("Result of watt from volt (" + u + ") and ampere (" + i + ") is " + result);
         return result;
         }
-        
+        private double pAusUundR(double u, double r) {
+            double result = Math.pow(u, 2) / r;
+            System.out.println("Result of watt from volt (" + u + ") and ohm (" + r + ") is " + result);
+        return result;
+        }
 }
